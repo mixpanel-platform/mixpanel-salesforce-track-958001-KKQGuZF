@@ -75,7 +75,7 @@
         else {
           debugger
           var user = MP.api.people({
-              where: 'properties["User_ID"] == ' + User_ID
+              where: 'properties["user_id"] == ' + User_ID
           }).done(function(results) {
               var results = results.values();
               if (_.isEmpty(results.results)) {
